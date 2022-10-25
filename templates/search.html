@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="spacer">
+  </div>
+
+  <form name="form" autocomplete="off" action="/search" method="post">
+    <div class="center">
+      <h2>Введите запрос!</h2>
+      <div class="center2">
+        <input id="feature_input" type="text" name="query" placeholder="ADJ дом">
+        <input id="submitbutton" type="submit" name="Search" value="Поиск">
+      </div>
+    </div>
+  </form>
+  
+  <div class="small-spacer">
+  </div>
+{% endblock %}

@@ -1,0 +1,385 @@
+html {
+  overflow-y: scroll;
+}
+
+/* Clearing floats */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.holder {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Main level */
+.menu {			
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+
+.menu > li {
+  background: black;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.menu li {
+  background: black;
+
+}		
+
+.menu li:hover {
+  background: grey;
+
+}
+
+li.active {
+  background: grey;
+
+}		
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+.menu > li > a:hover{
+
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-size: cover;
+}
+
+.spacer
+{
+    width: 100%;
+    height: 200px;
+}
+
+.black
+{
+    width: 100%;
+    background: black;
+}
+
+.small-spacer
+{
+    width: 100%;
+    height: 20px;
+}
+
+.spacer-bottom
+{
+    width: 100%;
+    height: 100px;
+}
+
+.backgr {
+  background-image: url('https://s3.envato.com/files/235630456/animated%20mathematical%20background%20590x.jpg');
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 54%;
+}
+
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.center-table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90%;
+}
+
+.center-table1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: normal;
+  text-align: center;
+}
+
+span {
+  font-size: 20px;
+  font-family: Georgia;
+  display: block;
+  text-align: center;
+  border: solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+  font-family: Georgia;
+  text-align: left;
+}
+
+.list1 {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: Georgia;
+  text-align: left;
+}
+
+.margin {
+  margin-left: 350px;
+  float: left;
+}
+
+.center2 {
+  text-align: center;
+}
+
+.center3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+}
+
+.list2 {
+  font-size: 20px;
+  margin-right: 400px;
+  font-family: Georgia;
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border: 2px solid black;
+  height: 60px;
+  width: 100px;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: Georgia;
+}
+
+bold {
+  font-weight: bold;
+}
+
+table {
+  text-align: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  width: 250px;
+  height: 60px;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+[id]::before {
+  content: '';
+  display: block;
+  height:      25px;
+  margin-top: -25px;
+  visibility: hidden;
+}
+
+div.form
+{
+  border-radius: 5px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+
+input {
+  width: 18px;
+  height: 18px;
+}
+
+input.form-element-field {
+  width: 150px;
+  height: 20px;
+}
+
+
+.form-select-placeholder {
+ width: 150px;
+ height: 20px;
+}
+
+button {
+  width: 200px;
+  height: 35px;
+  left         : 440px;
+  top          : 360px;
+
+  padding      : 5px;
+
+  font         : bold .6em sans-serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  background   : none;
+  font-family: Georgia;
+  font-size: 20px;
+  cursor       : pointer;
+}
+
+button:after {
+  content: " >>>";
+}
+
+.small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+}
+
+.medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+button:hover,
+button:focus {
+  outline   : none;
+  background: #000;
+  color   : #FFF;
+}
+
+input[type=text], input[type=number], select {
+  width: 400px;
+  height: 45px;
+  font-family: Georgia;
+  font-size: 14px;
+  padding: 12px 20px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 150px;
+  height: 48px;
+  font-family: Georgia;
+  font-size: 16px;
+  background-color: #000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #272927;
+}

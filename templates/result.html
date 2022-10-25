@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="spacer">
+  </div>
+  <div class = "center">
+    {% for index in indices %}
+      <h3>{{metadata[index]}}</h3>
+      {{htmls[index]|markdown}}
+    {% endfor %}
+  </div>
+  <div class="small-spacer">
+  </div>
+{% endblock %}
